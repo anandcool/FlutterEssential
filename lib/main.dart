@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -15,10 +16,30 @@ class Home extends StatelessWidget {
         title: Text("Awesome App"),
       ),
       body: Container(
-        child: Text("Awesome App2"),
-        alignment: Alignment.center,
-        color: Colors.amberAccent,
-      ),
+          child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.baseline,
+        children: [
+          Container(
+            width: 122,
+            height: 122,
+            alignment: Alignment.center,
+            color: Colors.red,
+          ),
+          Container(
+            width: 122,
+            height: 122,
+            alignment: Alignment.center,
+            color: Colors.green,
+          ),
+          Container(
+            width: 122,
+            height: 122,
+            alignment: Alignment.center,
+            color: Colors.blue,
+          ),
+        ],
+      )),
     );
   }
 }
