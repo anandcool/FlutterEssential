@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'pages/home_page.dart';
+import 'package:flutterEssential/pages/login_page.dart';
 
 void main() {
   runApp(MaterialApp(
     title: "Awesome!!!",
-    home: Home(),
+    home: LoginPage(),
     theme: ThemeData(primaryColor: Colors.purple),
   ));
 }
